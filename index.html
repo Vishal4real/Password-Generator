@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jadu.css" />
+    <link rel="stylesheet" href="fonts/all.css" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+    
+    <div class="wrapper">
+        <div class="input-box">
+            <input type="text" value="123456789asdfghj" disabled>
+            <i class="fa-thin fa-copy"></i>
+        </div>
+        <div class="pass-indicator">
+            <div class="pass-length">
+                <div class="detials">
+                    <label class="Titile">Password length</label>
+                    <span>15</span>
+                </div>
+                <input type="range" max="30" min="1" step="1">
+            </div>
+            <div class="pass-setting"></div>
+            <label class="Titile">Password Setting</label>
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Lowercase (a-z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase (A-Z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numbers (0-9)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="symblos">
+                    <label for="symblos">Symblos(!@#$)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="duplicates">
+                    <label for="duplicates">Exclude duplicates</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="space">
+                    <label for="space">Inlcude space</label>
+                </li>
+            </ul>
+        </div>
+        <button class="generate-btn">Generate Password</button>
+    </div>
+</div>
+    <script src="fun.js"></script>
+</body>
+</html>
