@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jadu.css" />
-    <link rel="stylesheet" href="fonts/all.css" />
     <script src="https://kit.fontawesome.com/ab9e10cfd1.js" crossorigin="anonymous"></script>
     <title>Password Generator</title>
 </head>
@@ -15,14 +14,14 @@
     
     <div class="wrapper">
         <div class="input-box">
-            <input type="text" value="123456789asdfghj" disabled>
+            <input type="text" disabled>
             <i class="fa-regular fa-copy"></i>
         </div>
         <div class="pass-indicator"></div>
             <div class="pass-length">
                 <div class="detials">
                     <label class="Titile">Password length</label>
-                    <span>15</span>
+                    <span></span>
                 </div>
                 <input type="range" max="30" min="1" value="15" step="1">
             </div>
@@ -30,7 +29,7 @@
             <label class="Titile">Password Setting</label>
             <ul class="options">
                 <li class="option">
-                    <input type="checkbox" id="lowercase">
+                    <input type="checkbox" id="lowercase" checked>
                     <label for="lowercase">Lowercase (a-z)</label>
                 </li>
                 <li class="option">
@@ -42,16 +41,12 @@
                     <label for="numbers">Numbers (0-9)</label>
                 </li>
                 <li class="option">
-                    <input type="checkbox" id="symblos">
+                    <input type="checkbox" id="symbols">
                     <label for="symblos">Symblos (!@#$)</label>
                 </li>
                 <li class="option">
                     <input type="checkbox" id="duplicates">
                     <label for="duplicates">Exclude duplicates</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="space">
-                    <label for="space">Inlcude space</label>
                 </li>
             </ul>
         
