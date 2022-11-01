@@ -37,7 +37,7 @@ const generatepassword=() =>{
     passwordInput.value= randomPassword
 }
 const updatepassindicator=()=>{
-    passwordIndicator.id =lengthslider.value <=8 ? "weak" : lengthslider.value <=16 ? "medium" : "strong";
+    passwordIndicator.id =lengthslider.value <=8 || lengthslider.value==0 ? "weak" : lengthslider.value <=16 ? "medium" : "strong";
 }
 const   updateslider= () =>{
     document.querySelector(".pass-length span").innerText= lengthslider.value;
